@@ -913,7 +913,7 @@ abstract class Email_Driver
 		$encoding = $this->config['encoding'];
 
 		$headers = '';
-		$parts = array('Date', 'Return-Path', 'From', 'To', 'Cc', 'Bcc', 'Reply-To', 'Subject', 'Message-ID', 'X-Priority', 'X-Mailer', 'MIME-Version', 'Content-Type');
+		$parts = array('Date', 'Return-Path', 'From', 'To', 'Cc', 'Bcc', 'Reply-To', 'Subject', 'Message-ID', 'X-Priority', 'X-Mailer', 'MIME-Version', 'Content-Type', 'Content-Transfer-Encoding');
 		$no_bcc and array_splice($parts, 5, 1);
 
 		foreach ($parts as $part)
